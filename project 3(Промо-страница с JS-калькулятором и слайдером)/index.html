@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Промо-страница</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Промо-страница</h1>
+  <p>Слайдер и калькулятор покупки</p>
+</header>
+
+<section>
+  <h2>Наши продукты</h2>
+  <div class="products">
+    <div class="product"><img src="https://via.placeholder.com/200x120.png?text=Продукт+1"><p>Продукт 1</p></div>
+    <div class="product"><img src="https://via.placeholder.com/200x120.png?text=Продукт+2"><p>Продукт 2</p></div>
+    <div class="product"><img src="https://via.placeholder.com/200x120.png?text=Продукт+3"><p>Продукт 3</p></div>
+  </div>
+</section>
+
+<section id="slider-section">
+  <h2>Отзывы клиентов</h2>
+  <div id="slider">
+    <div class="slider-items">
+      <div class="slider-item">"Отличный продукт! Очень доволен." – Иван</div>
+      <div class="slider-item">"Продукт сэкономил мне массу времени." – Мария</div>
+      <div class="slider-item">"Удобно и просто, рекомендую!" – Алексей</div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </div>
+</section>
+
+<section>
+  <h2>Калькулятор стоимости</h2>
+  <form id="calcForm">
+    <input type="number" id="amount" placeholder="Введите сумму покупки, ₽" required>
+    <button class="calc" type="submit">Рассчитать бонус</button>
+    <p id="result"></p>
+  </form>
+</section>
+
+<section>
+  <h2>Связаться с нами</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Имя" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Сообщение" rows="4" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Промо-страница. Telegram: <a href="https://t.me/твой_ник" style="color:white;">@твой_ник</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

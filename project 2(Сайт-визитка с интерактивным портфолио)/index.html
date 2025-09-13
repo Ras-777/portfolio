@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт-визитка</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Я Фрилансер</h1>
+  <p>Верстаю сайты и делаю мини-игры на JS</p>
+</header>
+
+<section>
+  <h2>Портфолио</h2>
+  <div class="portfolio">
+    <div class="card" onclick="openModal('Проект 1: Лендинг')">
+      <img src="https://via.placeholder.com/250x150.png?text=Проект+1" alt="Проект 1">
+      <p>Лендинг продукта</p>
+    </div>
+    <div class="card" onclick="openModal('Проект 2: Сайт-визитка')">
+      <img src="https://via.placeholder.com/250x150.png?text=Проект+2" alt="Проект 2">
+      <p>Сайт-визитка</p>
+    </div>
+    <div class="card" onclick="openModal('Проект 3: Промо-страница')">
+      <img src="https://via.placeholder.com/250x150.png?text=Проект+3" alt="Проект 3">
+      <p>Промо-страница</p>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <p id="modal-text"></p>
+    <button onclick="closeModal()">Закрыть</button>
+  </div>
+</div>
+
+<section>
+  <h2>Связаться со мной</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Имя" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Сообщение" rows="4" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Моя Сайт-визитка. Telegram: <a href="https://t.me/твой_ник" style="color:white;">@твой_ник</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
